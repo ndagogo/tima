@@ -1,7 +1,6 @@
 databases:
   - name: postgres
     ipAllowList: []
-   
 
 services:
   - type: web
@@ -13,7 +12,7 @@ services:
       - key: RAILS_MASTER_KEY
         sync: false
       - key: DATABASE_URL
-      fromDatabase:
+        fromDatabase:
           name: postgres
           property: connectionString
   - type: redis
@@ -21,4 +20,3 @@ services:
     ipAllowList: []
     plan: free
     maxmemoryPolicy: noeviction
-
