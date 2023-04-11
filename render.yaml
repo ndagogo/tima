@@ -1,5 +1,5 @@
 databases:
-  - name: postgres
+  - name: tima
     ipAllowList: []
     plan: free
     user: tima
